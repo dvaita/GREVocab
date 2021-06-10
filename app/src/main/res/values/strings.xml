@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">GRE Vocab</string>
+    <string name="gre_vocabulary_prep">GRE Vocabulary Prep</string>
+    <string name="continue_learning">Continue Learning</string>
+    <string name="lets_continue_the_journey">Lets Continue the Journey!</string>
+</resources>

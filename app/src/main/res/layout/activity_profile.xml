@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/white">
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/gre_vocabulary_prep"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageView
+                android:id="@+id/button2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/logo_app"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/r1">
+
+            <ImageView
+                android:id="@+id/wordsImg"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/words"/>
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GRE VOCABULARY PREP"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/wordsImg"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_above="@+id/r4"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:text="Words Completed"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/completedWords"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginStart="10dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Words Bookmarked"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginStart="10dp"/>
+
+                    <TextView
+                        android:id="@+id/bookmarkedWords"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginStart="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/r5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/i3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/cpy"
+                        tools:ignore="ContentDescription" />
+
+                        <TextView
+                        android:id="@+id/t5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/i3"
+                        android:text="Advait Thakur"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/draw4"
+                    android:layout_alignParentBottom="true">
+
+                    <ImageView
+                        android:id="@+id/i1"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="60dp"
+                        android:background="@drawable/insta"/>
+
+                    <TextView
+                        android:id="@+id/e1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/i1"
+                        android:text="dvait_a"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <ImageView
+                        android:id="@+id/i2"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="60dp"
+                        android:layout_toEndOf="@id/e1"
+                        android:background="@drawable/fb" />
+
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/i2"
+                        android:text="Advait Thakur"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_above="@+id/r4"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:background="#3E3D3D"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/white"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            tools:ignore="DisableBaselineAlignment">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.5">
+                <Button
+                    android:id="@+id/words"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:alpha="0.7"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/words"
+                    tools:ignore="ButtonStyle" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:id="@+id/bookmark"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:alpha="0.7"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bookmarks"
+                    tools:ignore="ButtonStyle" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:id="@+id/search"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:alpha="0.7"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/search"
+                    tools:ignore="ButtonStyle" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.5">
+                <Button
+                    android:id="@+id/orders"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:alpha="0.7"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/dashboard"
+                    tools:ignore="ButtonStyle" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

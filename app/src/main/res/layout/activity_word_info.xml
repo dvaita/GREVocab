@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WordsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/white">
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Words"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageView
+                android:id="@+id/button2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/logo_app"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@+id/r1"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/edittext_curve_bg"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:weightSum="6">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/questionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:text="Question Lies Here"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEFINITION"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#F44336"/>
+                <TextView
+                    android:id="@+id/info1"
+                    android:layout_below="@+id/title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Info Appear Here"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Part Of Speech"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#F44336"/>
+                <TextView
+                    android:id="@+id/info2"
+                    android:layout_below="@+id/title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Info Appear Here"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EXAMPLE"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#F44336"/>
+                <TextView
+                    android:id="@+id/info3"
+                    android:layout_below="@+id/title3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Info Appear Here"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="140dp"
+            android:background="?attr/selectableItemBackground"
+            android:text="Exit"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</LinearLayout>

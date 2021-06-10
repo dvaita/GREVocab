@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "623306071940",
+    "project_id": "gre-prep-d031c",
+    "storage_bucket": "gre-prep-d031c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623306071940:android:961a1aa784af0e3aaf07d1",
+        "android_client_info": {
+          "package_name": "com.example.grevocab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623306071940-p52oq99kf4r4e59tuc6lc37cbuf1pctb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4lY7eJ5IO5oFz3cmmr1BbBeR5taKe-Sg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623306071940-p52oq99kf4r4e59tuc6lc37cbuf1pctb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

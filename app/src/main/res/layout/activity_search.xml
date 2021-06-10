@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+
+        <LinearLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:background="?attr/selectableItemBackground"
+                android:layout_weight="2.3"/>
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="@drawable/edittext_curve_bg"
+                android:layout_margin="10dp"
+                android:text="Search"/>
+
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/r2"/>
+
+
+        <LinearLayout
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_above="@+id/r4"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:background="#3E3D3D"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/white"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            tools:ignore="DisableBaselineAlignment">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.5">
+                <Button
+                    android:id="@+id/words"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:alpha="0.7"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/words"
+                    tools:ignore="ButtonStyle" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:id="@+id/bookmark"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:alpha="0.7"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bookmarks"
+                    tools:ignore="ButtonStyle" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:id="@+id/searchB"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:alpha="0.7"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/search"
+                    tools:ignore="ButtonStyle" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.5">
+                <Button
+                    android:id="@+id/orders"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:alpha="0.7"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/dashboard"
+                    tools:ignore="ButtonStyle" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
